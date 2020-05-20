@@ -92,10 +92,10 @@ contract DaiFab is DSAuth {
 
     function makeTokens() public auth {
         require(step == 0);
-        sai = gemFab.newTok('DAI');
+        sai = gemFab.newTok('TAO');
         sin = gemFab.newTok('SIN');
         skr = gemFab.newTok('PETH');
-        sai.setName('Dai Stablecoin v1.0');
+        sai.setName('TAO Stablecoin v1.0');
         sin.setName('SIN');
         skr.setName('Pooled Ether');
         step += 1;
